@@ -1,0 +1,434 @@
+Dodge	#34	#2			shot
+Dodge	#12	#6			slide
+Dodge	#23	#33			turnover
+Dodge	#30	#44			slide
+Dodge	#34	#29			no advantage
+Dodge	#14	#5			no advantage
+Dodge	#14	#33			missed assist
+Dodge	#23	#29			no advantage
+Dodge	#77	#2			no advantage
+Dodge	#23	#31			assist
+Dodge	#15	#36			no advantage
+Dodge	#50	#45			slide
+Dodge	#34	#2			slide
+Dodge	#4	#29			no advantage
+Dodge	#19	#33			no advantage
+Dodge	#25	#31			no advantage
+Dodge	#34	#29			no advantage
+Dodge	#55	#24			no advantage
+Pick	#50	#24	#55	#18	no advantage
+Dodge	#4	#6			missed assist
+Dodge	#34	#36			no advantage
+Dodge	#34	#36			goal
+Dodge	#12	#31			goal
+Dodge	#29	#45/#44			no advantage
+Dodge	#15	#45			goal
+Dodge	#4	#28			no advantage
+Dodge	#4	#18			no advantage
+Dodge	#23	#2			no advantage
+Dodge	#23	#2			shot
+Dodge	#4	#33			no advantage
+Dodge	#23	#24			slide
+Dodge	#15	#29			no advantage
+Pick	#13	#5	#34	#18	no advantage
+Dodge	#15	#29			no advantage
+Dodge	#19	#1			switch
+Dodge	#25	#2			shot
+Dodge	#34	#40			no advantage
+Dodge	#4	#27			no advantage
+Dodge	#34	#40			no advantage
+Dodge	#4	#27			missed assist
+Dodge	#14	#24			no advantage
+Dodge	#30	#6			assist
+Pick	#30	#6	#14	#24	goal
+Dodge	#30	#6			no advantage
+Dodge	#14	#18			no advantage
+Pick	#14	#18	#50	#24	no advantage
+Pick	#50	#18	#14	#24	no advantage
+Dodge	#50	#24			no advantage
+Dodge	#77	#33			no advantage
+Pick	#12	#6	#77	#33	no advantage
+Dodge	#77	#33			no advantage
+Pick	#77	#33	#12	#6	switch
+Dodge	#12	#33			no advantage
+Dodge	#50	#2			switch
+Dodge	#19	#42			no advantage
+Dodge	#30	#36			goal
+Dodge	#55	#17			no advantage
+Dodge	#4	#45			no advantage
+Dodge	#23	#27			missed assist
+Dodge	#15	#5			no advantage
+Dodge	#50	#2			missed assist
+Pick	#50	#42	#19	#5	assist
+Dodge	#4	#5			turnover
+Dodge	#20	#24			no advantage
+Pick	#12	#16	#34	#33	switch
+Dodge	#34	#33			double team
+Dodge	#14	#17			no advantage
+Dodge	#15	#5			no advantage
+Dodge	#19	#31			switch
+Dodge	#15	#5			missed assist
+Dodge	#20	#25			no advantage
+Dodge	#20	#25			goal
+Dodge	#55	#40			no advantage
+Dodge	#12	#27			missed assist
+Dodge	#25	#33			shot
+Dodge	#14	#24			no advantage
+Dodge	#10	#33			turnover
+Dodge	#34	#24			no advantage
+Dodge	#77	#29			no advantage
+Dodge	#34	#24			missed assist
+Dodge	#14	#17			no advantage
+Pick	#7	#1	#14	#17	shot
+Dodge	#55	#45			no advantage
+Dodge	#12	#27			no advantage
+Dodge	#20	#29			assist
+Dodge	#20	#29			no advantage
+Dodge	#77	#27			switch
+Dodge	#34	#40			switch
+Pick	#77	#27	#34	#40	switch
+Dodge	#55	#45			assist
+Dodge	#15	#2			no advantage
+Dodge	#25	#16			no advantage
+Dodge	#7	#42			turnover
+Dodge	#55	#45			missed assist
+Dodge	#20	#36			no advantage
+Pick	#12	#1	#20	#36	no advantage
+Dodge	#12	#36			switch
+Dodge	#77	#45			no advantage
+Pick	#34	#44	#77	#36	double team
+Dodge	#23	#17			no advantage
+Dodge	#26	#48			no advantage
+Dodge	#4	#36			shot
+Dodge	#12	#27			no advantage
+Dodge	#10	#33			no advantage
+Dodge	#50	#40			shot
+Dodge	#50	#40			no advantage
+Dodge	#77	#44			no advantage
+Dodge	#34	#2			no advantage
+Dodge	#34	#2			shot
+Dodge	#14	#8			shot
+Dodge	#27	#36			switch
+Dodge	#25	#42			slide
+Dodge	#50	#5			no advantage
+Dodge	#25	#31			slide
+Dodge	#23	#45			no advantage
+Dodge	#23	#45			slide
+Dodge	#7	#3			shot
+Dodge	#15	#17			no advantage
+Dodge	#50	#8			slide
+Dodge	#4	#16			slide
+Dodge	#23	#5			no advantage
+Dodge	#10	#40			no advantage
+Pick	#23	#5	#34	#44	shot
+Dodge	#34	#5			slide
+Dodge	#77	#5			slide
+Dodge	#55	#18			slide
+Dodge	#12	#38			slide
+Pick	#7	#3	#50	#29	slide
+Dodge	#12	#45			no advantage
+Dodge	#7	#3			no advantage
+Dodge	#12	#45			turnover
+Dodge	#15	#17			shot
+Dodge	#26	#48			turnover
+Dodge	#40	#55			switch
+Dodge	#14	#40			turnover
+Dodge	#7	#3			shot
+Dodge	#19	#1			shot
+Dodge	#34	#24			no advantage
+Dodge	#23	#36			shot
+Dodge	#20	#8			turnover
+Dodge	#23	#45			slide
+Pick	#50	#2	#14	#40	slide
+Dodge	#14	#40			no advantage
+Dodge	#25	#48			no advantage
+Dodge	#77	#6			turnover
+Pick	#26	#31	#15	#33	switch
+Dodge	#4	#18			switch
+Dodge	#7	#28			no advantage
+Dodge	#34	#17			no advantage
+Dodge	#12	#1			slide
+Pick	#26	#3	#12	#16	no advantage
+Dodge	#4	#45			switch
+Dodge	#23	#45			assist
+Dodge	#15	#40			shot
+Dodge	#20	#40			assist
+Pick	#50	#33	#15	#42	shot
+Dodge	#12	#28			no advantage
+Dodge	#14	#42			goal
+Dodge	#34	#29			no advantage
+Dodge	#77	#3			shot
+Pick	#12	#48	#7	#6	assist
+Dodge	#12	#6			no advantage
+Dodge	#14	#2			no advantage
+Pick	#55	#48	#12	#6	slide
+Dodge	#12	#56			no advantage
+Dodge	#50	#28			no advantage
+Dodge	#55	#17			slide
+Dodge	#51	#16			no advantage
+Dodge	#23	#45			missed assist
+Pick	#13	#31	#25	#3	switch
+Pick	#40	#20	#7	#28	no advantage
+Dodge	#7	#28			no advantage
+Dodge	#25	#31			missed assist
+Dodge	#34	#42			slide
+Dodge	#30	#33			slide
+Dodge	#12	#1			assist
+Dodge	#12	#40			slide
+Dodge	#23	#2			slide
+Dodge	#14	#17			slide
+Dodge	#23	#2			shot
+Dodge	#34	#36			no advantage
+Dodge	#12	#15			slide
+Dodge	#77	#15			assist
+Dodge	#50	#40			no advantage
+Dodge	#23	#44			no advantage
+Pick	#15	#1	#30	#27	switch
+Dodge	#24	#45			shot
+Dodge	#30	#17			assist
+Dodge	#12	#16			no advantage
+Pick	#7	#18	#34	#36	no advantage
+Dodge	#34	#29			shot
+Dodge	#30	#16			no advantage
+Dodge	#14	#8			no advantage
+Dodge	#55	#6			slide
+Dodge	#15	#17			no advantage
+Dodge	#2	#45			no advantage
+Pick	#24	#5	#13	#48	missed assist
+Pick	#77	#31	#20	#29	shot
+Dodge	#77	#31			shot
+Pick	#7	#6	#25	#28	no advantage
+Dodge	#33	#44			assist
+Dodge	#23	#45			missed assist
+Dodge	#14	#17			slide
+Dodge	#23	#45			goal
+Dodge	#55	#36			shot
+Dodge	#12	#6			no advantage
+Dodge	#20	#8			slide
+Dodge	#20	#28			no advantage
+Dodge	#12	#6			assist
+Dodge	#14	#17			no advantage
+Dodge	#50	#1			no advantage
+Dodge	#14	#17			turnover
+Dodge	#23	#28			no advantage
+Pick	#30	#3	#50	#29	no advantage
+Dodge	#14	#2			no advantage
+Dodge	#50	#29			slide
+Dodge	#55	#17			no advantage
+Dodge	#34	#33			missed assist
+Dodge	#50	#17			turnover
+Dodge	#14	#34			slide
+Dodge	#34	#5			slide
+Dodge	#23	#45			slide
+Dodge	#12	#6			no advantage
+Dodge	#55	#44			no advantage
+Dodge	#50	#8			shot
+Dodge	#25	#1			slide
+Dodge	#14	#44			no advantage
+Dodge	#15	#44			turnover
+Dodge	#20	#15			missed assist
+Dodge	#20	#31			assist
+Dodge	#14	#33			no advantage
+Dodge	#4	#6			no advantage
+Pick	#77	#48	#25	#44	assist
+Pick	#50	#17	#23	#24	slide
+Dodge	#7	#28			no advantage
+Pick	#7	#24	#50	#28	switch
+Pick	#34	#56	#51		switch
+Dodge	#34	#16			slide
+Dodge	#51	#56			no advantage
+Dodge	#23	#31			shot
+Dodge	#4	#6			no advantage
+Dodge	#55	#42			no advantage
+Dodge	#30	#5			slide
+Dodge	#20	#40			no advantage
+Dodge	#4	#40			slide
+Pick	#7	#3	#23	#2	no advantage
+Pick	#50	#29	#10	#31	no advantage
+Dodge	#12	#16			slide
+Dodge	#23	#2			missed assist
+Pick	#23	#2	#34	#18	missed assist
+Dodge	#14	#33			slide
+Dodge	#4	#48			slide
+Dodge	#13	#33			missed assist
+Pick	#50	#45	#10	#31	slide
+Pick	#30	#5	#20	#6	switch
+Dodge	#20	#5			missed assist
+Dodge	#77	#1			assist
+Pick	#7	#28	#34	#17	no advantage
+Dodge	#50	#2			missed assist
+Dodge	#34	#17			goal
+Dodge	#51	#31			shot
+Dodge	#10	#16			goal
+Dodge	#12	#16			shot
+Pick	#34	#17	#51	#31	switch
+Dodge	#50	#29			no advantage
+Dodge	#51	#17			shot
+Dodge	#34	#45			goal
+Pick	#7	#2	#51	#3	switch
+Dodge	#50	#24			no advantage
+Pick	#55	#7	#2	#23	assist
+Dodge	#4	#6			goal
+Pick	#30	#33	#38	#32	switch
+Dodge	#4	#1			missed assist
+Dodge	#34	#20			shot
+Dodge	#10	#3			no advantage
+Dodge	#10	#3			slide
+Dodge	#23	#56			missed assist
+Dodge	#13	#6			goal
+Dodge	#12	#16			slide
+Pick	#23	#28	#50	#45	goal
+Dodge	#51	#2			slide
+Dodge	#77	#23			shot
+Dodge	#12	#16			no advantage
+Pick	#50	#29	#34	#18	shot
+Pick	#14	#42	#4	#6	switch
+Dodge	#25	#33			assist
+Dodge	#13	#48			assist
+Pick	#12	#28	#10	#31	switch
+Dodge	#14	#29			no advantage
+Dodge	#4	#16			no advantage
+Pick	#25	#48	#4	#16	double team
+Dodge	#4	#16			slide
+Pick	#23	#56	#14	#5	assist
+Pick	#7	#17	#51	#15	switch
+Dodge	#15	#51			no advantage
+Dodge	#77	#20			goal
+Pick	#7	#25	#20	#34	shot
+Pick	#55	#16	#28	#18	double team
+Pick	#55	#18	#5	#50	switch
+Dodge	#50	#55			goal
+Pick	#36	#40	#13	#29	goal
+Pick	#3	#13	#77	#56	switch
+Dodge	#9	#45			slide
+Dodge	#34	#48			slide
+Dodge	#28	#50			no advantage
+Dodge	#29	#28			assist
+Pick	#5	#40	#36	#77	switch
+Dodge	#20	#50			no advantage
+Pick	#13	#3	#36	#77	shot
+Dodge	#9	#7			slide
+Dodge	#15	#48			shot
+Dodge	#55	#16			missed assist
+Pick	#7	#34	#56	#17	switch
+Dodge	#7	#17			missed assist
+Pick	#34	#56	#16	#51	shot
+Dodge	#20	#50			no advantage
+Pick	#28	#50	#32	#29	no advantage
+Dodge	#45	#50			goal
+Pick	#44	#29	#5	#40	assist
+Pick	#15	#13	#3	#55	goal
+Pick	#51	#16	#48	#77	turnover
+Dodge	#7	#16			no advantage
+Dodge	#56	#31			goal
+Pick	#29	#51	#18	#7	switch
+Dodge	#29	#7			goal
+Dodge	#28	#15			shot
+Pick	#28	#3	#5	#77	missed assist
+Dodge	#3	#5			goal
+Dodge	#7	#16			shot
+Pick	#51	#18	#13	#14	switch
+Dodge	#20	#18			turnover
+Dodge	#55	#25			shot
+Dodge	#40	#44			goal
+Dodge	#55	#50			shot
+Pick	#14	#7	#30	#45	switch
+Pick	#23	#32	#30	#7	switch
+Dodge	#14	#45			shot
+Dodge	#55	#23			no advantage
+Dodge	#36	#14			goal
+Dodge	#44	#2			goal
+Pick	#4	#56	#2	#44	no advantage
+Dodge	#45	#33			no advantage
+Pick	#45	#33	#48	#14	turnover
+Pick	#42	#51	#14	#36	no advantage
+Dodge	#30	#20			goal
+Dodge	#44	#23			slide
+Pick	#23	#44	#10	#13	shot
+Pick	#7	#2	#13	#10	missed assist
+Pick	#20	#2	#51	#52	assist
+Pick	#51	#42	#55	#33	switch
+Pick	#55	#42	#51	#33	switch
+Dodge	#28	#4			no advantage
+Pick	#44	#30	#5	#14	shot
+Pick	#4	#5	#14	#42	no advantage
+Dodge	#6	#7			slide
+Pick	#14	#48	#33	#36	missed assist
+Pick	#56	#6	#13	#27	no advantage
+Pick	#56	#6	#20	#23	missed assist
+Dodge	#23	#32			goal
+Dodge	#51	#6			goal
+Pick	#2	#48	#38	#51	double team
+Dodge	#4	#28			assist
+Dodge	#7	#4			goal
+Dodge	#4	#48			no advantage
+Dodge	#4	#48	#14	#44	missed assist
+Pick	#51	#6	#56	#33	assist
+Dodge	#51	#38			assist
+Dodge	#2	#28			slide
+Dodge	#7	#2			no advantage
+Dodge	#4	#36			shot
+Dodge	#23	#77			shot
+Dodge	#2	#16			shot
+Dodge	#34	#2			no advantage
+Pick	#77	#4	#17	#6	missed assist
+Pick	#23	#12	#4	#15	slide
+Pick	#14	#40	#38	#31	switch
+Dodge	#12	#27			assist
+Pick	#23	#34	#38	#15	switch
+Dodge	#3	#33			no advantage
+Pick	#34	#36	#3	#33	shot
+Dodge	#50	#52			no advantage
+Pick	#18	#14	#17	#27	slide
+Dodge	#12	#10			goal
+Pick	#10	#29	#23	#31	switch
+Dodge	#29	#23			no advantage
+Dodge	#77	#36			goal
+Pick	#2	#15	#14	#3	goal
+Dodge	#3	#14			no advantage
+Pick	#4	#25	#52	#18	switch
+Dodge	#33	#50			shot
+Dodge	#12	#2			no advantage
+Dodge	#4	#29			shot
+Pick	#16	#23	#12		shot
+Dodge	#6	#16			no advantage
+Dodge	#23	#9			goal
+Pick	#33	#50	#27	#25	switch
+Dodge	#33	#25			goal
+Dodge	#34	#38			goal
+Dodge	#2	#31			missed assist
+Dodge	#9	#30			goal
+Dodge	#23	#12			goal
+Dodge	#20	#24			slide
+Dodge	#15	#40			shot
+Dodge	#34	#17			no advantage
+Dodge	#77	#48			slide
+Dodge	#7	#44			slide
+Dodge	#34	#17			slide
+Dodge	#7	#5			goal
+Pick	#30	#31	#20	#8	no advantage
+Dodge	#50	#2			assist
+Dodge	#23	#29			turnover
+Dodge	#55	#40			goal
+Pick	#34	#5	#55	#40	switch
+Dodge	#23	#17			missed assist
+Dodge	#4	#6			no advantage
+Dodge	#14	#18			slide
+Dodge	#4	#2			slide
+Dodge	#23	#36			slide
+Dodge	#14	#24			no advantage
+Dodge	#13	#33			no advantage
+Dodge	#30	#28			no advantage
+Dodge	#20	#40			turnover
+Dodge	#55	#17			no advantage
+Dodge	#14	#8			no advantage
+Pick	#7	#28	#34	#2	switch
+Dodge	#7	#2			slide
+Dodge	#23	#8			switch
+Dodge	#14	#8			turnover
+Dodge	#50	#36			missed assist
+Dodge	#55	#29			assist
+Pick	#51	#24	#23	#33	no advantage
+Dodge	#12	#6			missed assist
+Dodge	#23	#24			missed assist
+Dodge	#4	#42			turnover
