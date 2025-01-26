@@ -3,23 +3,25 @@ UNSUCCESSFUL_RESULTS = ['no advantage', 'turnover', 'switch']
 DODGE_STAT_TYPES = ['dodges', 'wins', 'win percent', 'goals', 'shots', 'assists', 'missed assists', 'turnovers']
 
 # Data organization 
-def generate_2d_list(file_name: str) -> list:
+def get_data(file_name: str) -> list:
     """
         Creates a 2d list with all the data in the file, with each row being its own nested list
     """
-    file = open(file_name, "r") # Opens file, reads all data into a 2d list
+    # Gathers all data from file and stores it in a 2d list
+    file = open(file_name, "r")
     everything = file.readlines()
     
     num_rows = len(everything)
     data = []
 
-    for i in range(num_rows): # Iterate through every row in everything
+   # Clean up data in everything 
+    for i in range(num_rows): 
         data.append([])
-        row_data = everything[i].split('\t') # Split each row into a list 
+        row_data = everything[i].split('\t') 
 
         for j in range(len(row_data)):  
             row_data[j] = row_data[j].strip() 
-            data[i].append(row_data[j].lower()) # Append each element in the row to the correct list in data
+            data[i].append(row_data[j].lower())
     
     return data
 
@@ -33,7 +35,7 @@ def get_player_list(file_name: str) -> list:
     for row in data:
         player = row[1]
 
-        if player not in players: # Adds player to players list if not already in it
+        if player not in players:
             players.append(player)
     
     return players
@@ -46,7 +48,7 @@ def get_duo_list(file_name: str) -> list:
 
     duos = []
 
-    for pick in picks:              # Creates the duo for each pick and adds it to the list if not already in
+    for pick in picks:             
         duo = (pick[1], pick[3])
         rev_duo = (pick[3], pick[1])
 
@@ -55,15 +57,13 @@ def get_duo_list(file_name: str) -> list:
         elif duo not in duos:      
             duos.append(duo)
         
-        
-    
     return duos
 
 def separate_dodges(file_name: str) -> list:
     """
         Separate the dodges into their own list
     """
-    data = generate_2d_list(file_name)
+    data = get_data(file_name)
     dodges = []
 
     for elem in data:
@@ -76,7 +76,7 @@ def separate_picks(file_name: str) -> list:
     """
         Separate the picks into their own list
     """
-    data = generate_2d_list(file_name)
+    data = get_data(file_name)
     picks = []
 
     for elem in data:
@@ -93,7 +93,7 @@ def create_player_dict(file_name: str) -> dict:
     stats_d = {}
 
 
-     # Iterate through each player and find their stats, then add to dictionary
+     # Iterate through each player in player list and find their stats, then add to dictionary
     for player in players:
         stats = create_player_stat_list(file_name, player)
 
@@ -155,7 +155,6 @@ def create_duo_stat_list(file_name: str, duo: tuple) -> list:
 
     return stats
 
-# Count stats per player or duo
 def count_dodges(file_name: str, player: str) -> int:
     """
         Counts the number of dodges for a player
@@ -176,7 +175,6 @@ def count_picks(file_name: str, target_duo: tuple) -> int:
     picks = separate_picks(file_name)
     num_picks = 0
     
-    # Iterate through every pick
     for pick in picks:
         # Create a tuple for the current duo of the current pick
         ball_carrier = pick[1]
@@ -235,7 +233,7 @@ def count_stat(file_name: str, player: str|tuple, action: str, stat: str) -> int
     elif action == 'pick':
         data = separate_picks(file_name)
     else:
-        data = generate_2d_list(file_name)
+        data = get_data(file_name)
 
     stat_total = 0
     
