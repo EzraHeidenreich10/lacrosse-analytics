@@ -23,7 +23,7 @@ def generate_2d_list(file_name: str) -> list:
     
     return data
 
-def create_player_list(file_name: str) -> list:
+def get_player_list(file_name: str) -> list:
     """
         Creates a list of players that have appeared in the ball carrier column
     """
@@ -38,7 +38,7 @@ def create_player_list(file_name: str) -> list:
     
     return players
 
-def create_duo_list(file_name: str) -> list:
+def get_duo_list(file_name: str) -> list:
     """
         Creates a list of duos that have performed a pick (First player is ball carrier, second is picker)
     """
@@ -85,39 +85,39 @@ def separate_picks(file_name: str) -> list:
 
     return picks
 
-def create_stat_dict(file_name: str) -> dict:
+def create_player_dict(file_name: str) -> dict:
     """
         Creates a dictionary of every stat for every player
     """
-    players = create_player_list(file_name)
+    players = get_player_list(file_name)
     stats_d = {}
 
 
      # Iterate through each player and find their stats, then add to dictionary
     for player in players:
-        stats = create_dodge_stat_list_for_player(file_name, player)
+        stats = create_player_stat_list(file_name, player)
 
         stats_d[player] = stats
     
     return stats_d
 
-def create_duo_stat_dict(file_name: str) -> dict:
+def create_duo_dict(file_name: str) -> dict:
     """
         Creates a dictionary of every stat for every duo
     """
-    duos = create_duo_list(file_name)
+    duos = get_duo_list(file_name)
     stats_d = {}
 
 
      # Iterate through each player and find their stats, then add to dictionary
     for duo in duos:
-        stats = create_pick_stat_list_for_duo(file_name, duo)
+        stats = create_duo_stat_list(file_name, duo)
 
         stats_d[duo] = stats
     
     return stats_d
 
-def create_dodge_stat_list_for_player(file_name: str, player: str) -> list:
+def create_player_stat_list(file_name: str, player: str) -> list:
     """
         Creates a list of a player's stats
     """
@@ -136,7 +136,7 @@ def create_dodge_stat_list_for_player(file_name: str, player: str) -> list:
 
     return stats
 
-def create_pick_stat_list_for_duo(file_name: str, duo: tuple) -> list:
+def create_duo_stat_list(file_name: str, duo: tuple) -> list:
     """
         Creates a list of a duo's stats
     """
@@ -261,7 +261,7 @@ def write_dodge_data_in_file(file_name: str) -> None:
     print(f"Updating file 'player_data.txt' using data from '{file_name}'...")
     output = open("player_data.txt", 'w')
 
-    stats_d = create_stat_dict(file_name)
+    stats_d = create_player_dict(file_name)
     
     for player, stats in stats_d.items():
         output.write(f"{player} {stats[0]} {stats[1]} {stats[2]} {stats[3]} {stats[4]} {stats[5]} {stats[6]} {stats[7]} \n")
@@ -276,7 +276,7 @@ def write_pick_data_in_file(file_name: str) -> None:
     print(f"Updating file 'duo_data.txt' using data from '{file_name}'...")
     output = open("duo_data.txt", 'w')
 
-    stats_d = create_duo_stat_dict(file_name)
+    stats_d = create_duo_dict(file_name)
     
     for duo, stats in stats_d.items():
         player1 = duo[0]
