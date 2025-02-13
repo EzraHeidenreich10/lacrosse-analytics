@@ -10,7 +10,7 @@ row_labels = ['Top', 'Mid', 'Bottom']
 col_labels = ['L', 'Mid', 'R']
 
 # Create the heatmap
-sns.heatmap(data, vmin=0, vmax=50, cmap='Blues', cbar=True, yticklabels=row_labels, xticklabels=col_labels, annot=True)
+sns.heatmap(data, vmin=0, vmax=35, cmap='Blues', cbar=True, yticklabels=row_labels, xticklabels=col_labels, annot=True)
 
 # Show heatmap
 plt.show()

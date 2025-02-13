@@ -85,6 +85,42 @@ def separate_picks(file_name: str) -> list:
 
     return picks
 
+def get_action_list(file_name: str, action: str) -> list:
+    """
+        Get a list of all occurences of the given action
+    """
+    data = get_data(file_name)
+    dodges = []
+    picks = []
+
+    for elem in data:
+        if elem[0] == 'dodge':
+            dodges.append(elem)
+        elif elem[0] == 'pick':
+            picks.append(elem)
+    
+    if action == 'dodges':
+        return dodges
+    else:
+        return picks
+    
+def get_action_dict(file_name: str) -> dict[str, list[str]]:
+    """
+        Get a dictionary of all occurences of the given action
+    """
+    data = get_data(file_name)
+    action_d = {}
+
+    for elem in data:
+        if elem[0] in action_d:
+            action_d[elem[0]].append(elem)
+        else:
+            action_d[elem[0]] = [elem]
+    
+    return action_d
+    
+
+
 def create_player_dict(file_name: str) -> dict:
     """
         Creates a dictionary of every stat for every player
@@ -167,6 +203,22 @@ def count_dodges(file_name: str, player: str) -> int:
             num_dodges += 1
     
     return num_dodges
+
+def count_action(all_actions: dict[str, list[str]], player: str) -> dict[str, int]:
+    """
+        Counts occurences of each action for given player
+    """
+    action_d = {}
+    for action in all_actions:
+        count = 0
+        for elem in all_actions[action]:
+            if player == elem[1]:
+                count += 1
+        action_d[action] = count
+    
+    return action_d
+                
+
 
 def count_picks(file_name: str, target_duo: tuple) -> int:
     """
