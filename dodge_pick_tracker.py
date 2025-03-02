@@ -25,11 +25,11 @@ def get_data(file_name: str) -> list:
     
     return data
 
-def get_player_list(file_name: str) -> list:
+def get_player_list(data: list) -> list:
     """
         Creates a list of players that have appeared in the ball carrier column
     """
-    data = get_action_dict(file_name)['dodge']
+    data = get_action_dict(data)['dodge']
     players = []
 
     for row in data:
@@ -40,11 +40,11 @@ def get_player_list(file_name: str) -> list:
     
     return players
 
-def get_duo_list(file_name: str) -> list:
+def get_duo_list(data: list) -> list:
     """
         Creates a list of duos that have performed a pick (First player is ball carrier, second is picker)
     """
-    picks = get_action_dict(file_name)['pick']
+    picks = get_action_dict(data)['pick']
 
     duos = []
 
@@ -59,13 +59,10 @@ def get_duo_list(file_name: str) -> list:
         
     return duos
 
-
-#NEW FUNCTION
-def get_action_dict(file_name: str) -> dict[str, list[str]]:
+def get_action_dict(data: list) -> dict[str, list[str]]:
     """
         Get a dictionary of all occurences of the given action
     """
-    data = get_data(file_name)
     action_d = {}
 
     for elem in data:
@@ -76,72 +73,72 @@ def get_action_dict(file_name: str) -> dict[str, list[str]]:
     
     return action_d
     
-def create_player_dict(file_name: str) -> dict:
+def create_player_dict(data: list) -> dict:
     """
         Creates a dictionary of every stat for every player
     """
-    players = get_player_list(file_name)
+    players = get_player_list(data)
     stats_d = {}
 
 
      # Iterate through each player in player list and find their stats, then add to dictionary
     for player in players:
-        stats = create_player_stat_list(file_name, player)
+        stats = create_player_stat_list(data, player)
 
         stats_d[player] = stats
     
     return stats_d
 
-def create_duo_dict(file_name: str) -> dict:
+def create_duo_dict(data: list) -> dict:
     """
         Creates a dictionary of every stat for every duo
     """
-    duos = get_duo_list(file_name)
+    duos = get_duo_list(data)
     stats_d = {}
 
 
      # Iterate through each player and find their stats, then add to dictionary
     for duo in duos:
-        stats = create_duo_stat_list(file_name, duo)
+        stats = create_duo_stat_list(data, duo)
 
         stats_d[duo] = stats
     
     return stats_d
 
-def create_player_stat_list(file_name: str, player: str) -> list:
+def create_player_stat_list(data: list, player: str) -> list:
     """
         Creates a list of a player's stats
     """
-    all_actions = get_action_dict(file_name)
+    all_actions = get_action_dict(data)
     
     # Retrieve the value for each stat
     dodges = count_player_actions(all_actions, player)['dodge']
-    wins = count_successful_dodges(file_name, player)
+    wins = count_successful_dodges(data, player)
     win_percent = round(wins / dodges * 100, 2)
-    goals = count_stat(file_name, player, 'dodge', 'goal') 
-    shots = count_stat(file_name, player, 'dodge', 'shot') + goals
-    asst = count_stat(file_name, player, 'dodge', 'assist')
-    miss_asst = count_stat(file_name, player, 'dodge', 'missed assist')
-    turnovers = count_stat(file_name, player, 'dodge', 'turnover')
+    goals = count_stat(data, player, 'dodge', 'goal') 
+    shots = count_stat(data, player, 'dodge', 'shot') + goals
+    asst = count_stat(data, player, 'dodge', 'assist')
+    miss_asst = count_stat(data, player, 'dodge', 'missed assist')
+    turnovers = count_stat(data, player, 'dodge', 'turnover')
 
     # Create a list containing each stat
     stats = [dodges, wins, f"{win_percent}%", goals, shots, asst, miss_asst, turnovers]
 
     return stats
 
-def create_duo_stat_list(file_name: str, duo: tuple) -> list:
+def create_duo_stat_list(data: list, duo: tuple) -> list:
     """
         Creates a list of a duo's stats
     """
     # Retrieve the value for each stat
-    picks = count_picks(file_name, duo)
-    wins = count_successful_picks(file_name, duo)
+    picks = count_picks(data, duo)
+    wins = count_successful_picks(data, duo)
     win_percent = round(wins / picks, 2) * 100
-    goals = count_stat(file_name, duo, 'pick', 'goal') 
-    shots = count_stat(file_name, duo, 'pick', 'shot') + goals
-    asst = count_stat(file_name, duo, 'pick', 'assist')
-    miss_asst = count_stat(file_name, duo, 'pick', 'missed assist')
-    turnovers = count_stat(file_name, duo, 'pick', 'turnover')
+    goals = count_stat(data, duo, 'pick', 'goal') 
+    shots = count_stat(data, duo, 'pick', 'shot') + goals
+    asst = count_stat(data, duo, 'pick', 'assist')
+    miss_asst = count_stat(data, duo, 'pick', 'missed assist')
+    turnovers = count_stat(data, duo, 'pick', 'turnover')
 
     # Create a list containing each stat
     stats = [picks, wins, f"{win_percent}%", goals, shots, asst, miss_asst, turnovers]
@@ -166,11 +163,11 @@ def count_player_actions(all_actions: dict[str, list[str]], player: str) -> dict
                 
 
 
-def count_picks(file_name: str, target_duo: tuple) -> int:
+def count_picks(data: list, target_duo: tuple) -> int:
     """
         Counts the number of picks for given target duo
     """
-    picks = get_action_dict(file_name)['pick']
+    picks = get_action_dict(data)['pick']
     num_picks = 0
     
     for pick in picks:
@@ -187,11 +184,11 @@ def count_picks(file_name: str, target_duo: tuple) -> int:
         
     return num_picks
 
-def count_successful_dodges(file_name: str, player: str) -> int:
+def count_successful_dodges(data: list, player: str) -> int:
     """
         Counts the number of successful dodges for the given player
     """
-    all_actions = get_action_dict(file_name)
+    all_actions = get_action_dict(data)
     successful = count_player_actions(all_actions, player)['dodge']
 
     for dodge in all_actions['dodge']:
@@ -205,11 +202,11 @@ def count_successful_dodges(file_name: str, player: str) -> int:
     
     return successful
 
-def count_successful_picks(file_name: str, target_duo: tuple) -> int:
+def count_successful_picks(data: list, target_duo: tuple) -> int:
     """
         Count the number of successful picks for a duo
     """
-    all_actions = get_action_dict(file_name)   
+    all_actions = get_action_dict(data)   
     successful = 0
     
     for pick in all_actions['pick']:
@@ -222,12 +219,12 @@ def count_successful_picks(file_name: str, target_duo: tuple) -> int:
     
     return successful  
 
-def count_stat(file_name: str, player: str|tuple, action: str, stat: str) -> int:
+def count_stat(data: list, player: str|tuple, action: str, stat: str) -> int:
     """
         Counts the given stat for the player after performing a dodge or pick
     """
     # Gets a list of every occurence of the correct action
-    all_actions = get_action_dict(file_name)[action]
+    all_actions = get_action_dict(data)[action]
     stat_total = 0
     
     for elem in all_actions:
@@ -245,14 +242,14 @@ def count_stat(file_name: str, player: str|tuple, action: str, stat: str) -> int
     return stat_total
 
 
-def write_dodge_data_in_file(file_name: str) -> None:
+def write_dodge_data_in_file(file_name: str, data: list) -> None:
     """
         Writes all player dodge data in a file
     """
     print(f"Updating file 'dodge_stats.txt' using data from '{file_name}'...")
     output = open("dodge_stats.txt", 'w')
 
-    stats_d = create_player_dict(file_name)
+    stats_d = create_player_dict(data)
     
     for player, stats in stats_d.items():
         output.write(f"{player} {stats[0]} {stats[1]} {stats[2]} {stats[3]} {stats[4]} {stats[5]} {stats[6]} {stats[7]} \n")
@@ -260,14 +257,14 @@ def write_dodge_data_in_file(file_name: str) -> None:
     output.close()
     print("File updated.\n")
 
-def write_pick_data_in_file(file_name: str) -> None:
+def write_pick_data_in_file(file_name: str, data: list) -> None:
     """
         Writes all duo pick data in a file
     """
     print(f"Updating file 'pick_stats.txt' using data from '{file_name}'...")
     output = open("pick_stats.txt", 'w')
 
-    stats_d = create_duo_dict(file_name)
+    stats_d = create_duo_dict(data)
     
     for duo, stats in stats_d.items():
         player1 = duo[0]
@@ -281,8 +278,9 @@ def write_pick_data_in_file(file_name: str) -> None:
 
 def main():
     file = 'raw_data.txt'
-    write_dodge_data_in_file(file)
-    write_pick_data_in_file(file)
+    data = get_data(file)
+    write_dodge_data_in_file(file, data)
+    write_pick_data_in_file(file, data)
     
     
     
