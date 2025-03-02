@@ -7,7 +7,7 @@ def get_data(file_name: str) -> list:
     """
         Creates a 2d list with all the data in the file, with each row being its own nested list
     """
-    # Gathers all data from file and stores it in a 2d list
+    #Gathers all data from file and stores it in a 2d list
     file = open(file_name, "r")
     everything = file.readlines()
     
